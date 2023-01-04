@@ -1,0 +1,41 @@
+version: '0.5'
+services:
+  app:
+    build:
+      args:
+        user: amuleke
+        uid: 1000
+      context: ./
+      dockerfile: docker-compose/app/Dockerfile
+    image: amuleke
+    container_name: amuleke-app
+    restart: unless-stopped
+    working_dir: /var/www/
+    ports:
+      - "88:80"
+      - "9000:9000"
+    expose:
+      - 80
+      - 9000
+    volumes:
+      - ./:/var/www
+      - ./docker-compose/nginx/amuleke.conf:/etc/nginx/sites-enabled/default
+    networks:
+      - amuleke
+  db:
+    image: postgres:15.1-bullseye
+    container_name: amuleke_db
+    restart: always
+    ports:
+      - "5435:5432"
+    volumes:
+      - ./docker-compose/pgsql:/docker-entrypoint-initdb.d
+    networks:
+      - amuleke
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_USER: db_admin
+      POSTGRES_PASSWORD: 1234.abc
+networks:
+  amuleke:
+    driver: bridge
