@@ -15,6 +15,12 @@ use Statamic\Facades\Site;
 |
 */
 
-// Dynamic Token route for posting a form with Ajax.
-Route::get('/!/DynamicToken/refresh', [DynamicToken::class, 'getRefresh']);
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+
+Route::controller(UsersController::class)->group(function(){
+    Route::get('users/','show');
+});
