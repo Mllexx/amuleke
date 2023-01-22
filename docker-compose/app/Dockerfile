@@ -8,10 +8,13 @@ RUN apt-get update && apt-get install -y \
     curl \
     zip \
     unzip \
+    wget \
+    supervisor \
     git \
     sudo \
     vim \
     nano \
+    net-tools \
     libcurl4-openssl-dev \
     libc-client-dev \
     libkrb5-dev\
@@ -34,10 +37,11 @@ RUN docker-php-ext-install pdo_mysql mbstring exif pcntl ctype xml soap pgsql cu
 RUN apt-get clean
 # GET COMPOSER
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
-#
+##
+COPY ./docker-compose/supervisord/supervisor.conf /etc/supervisor/conf.d/supervisord.conf
 COPY ./docker-compose/nginx/entrypoint.sh /etc/entrypoint.sh
 RUN chmod +x /etc/entrypoint.sh
-
-ENTRYPOINT ["sh", "/etc/entrypoint.sh"]
+##CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+ENTRYPOINT ["bash", "/etc/entrypoint.sh"]
 # SET WORKING DIRECTORY
 WORKDIR /var/www
