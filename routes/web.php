@@ -3,6 +3,7 @@
 use App\Http\Controllers\DynamicToken;
 use Illuminate\Support\Facades\Route;
 use Statamic\Facades\Site;
+use App\Http\Controllers\FrontendController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,11 +16,14 @@ use Statamic\Facades\Site;
 |
 */
 
-
+/*
 Route::get('/', function () {
     return view('home');
 });
-
+*/
+Route::controller(FrontendController::class)->group(function () {
+    Route::get('/', 'index');
+});
 
 Route::controller(UsersController::class)->group(function(){
     Route::get('users/','show');
