@@ -10,8 +10,8 @@ class FrontendController extends Controller
     public function index()
     {
         $medium_posts = $this->fetchMedium();
-        dd($medium_posts);
-        return view('medium', ['publications' => $medium_posts]);
+        ##dd($medium_posts);
+        return view('home.medium-articles', ['publications' => $medium_posts]);
         ##return view('home');
     }
 
