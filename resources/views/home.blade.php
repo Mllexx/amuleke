@@ -220,6 +220,9 @@
             </div>
         </div>
 
+        <div id="what-i've-written" class="px-0 py-5 content-segment">
+            @include('home.medium-articles')
+        </div>
         <!-- CONTACT FORM & CALL TO ACTION -->
         <div id="footer" class="px-0 pt-5 pb-0 content-segment">
             <div class="row text-start px-0">
