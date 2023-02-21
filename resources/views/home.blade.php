@@ -95,7 +95,7 @@
                 </div>
                 <div id="image" class="col-lg-4 col-md-4 col-sm-6 col-xs-12 img-fluid">
                     <picture>
-                        <source srcset="undraw_programming_re_kg9v.svg" type="image/svg+xml" />
+                        <source srcset="img/undraw_programming_re_kg9v.svg" type="image/svg+xml" />
                         <img alt="hero-graphic" class="img-fluid" src="{{ asset("img/undraw_programming_re_kg9v.svg") }}"  />
                     </picture>
                 </div>
