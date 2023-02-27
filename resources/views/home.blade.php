@@ -52,7 +52,9 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="d-flex mb-auto">
         <div id="logo" class="float-md-start mb-0">
-            <img alt="logo" class="img-fluid" src="{{ asset("img/am-transparent-black-logo.svg") }}"  />
+            <a href="#">
+                <img alt="logo" class="img-fluid" src="{{ asset("img/am-transparent-black-logo.svg") }}"  />
+            </a>
         </div>
         <nav id="widescreen-nav" class="navbar-collapse nav nav-masthead justify-content-end float-md-end">
             <ul class="nav">
@@ -220,14 +222,14 @@
             </div>
         </div>
 
-        <div id="what-i've-written" class="px-0 py-5 content-segment">
+        <div id="writtings" class="px-0 py-5 content-segment">
             @include('home.medium-articles')
         </div>
         <!-- CONTACT FORM & CALL TO ACTION -->
         <div id="footer" class="px-0 pt-5 pb-0 content-segment">
             <div class="row text-start px-0">
                 <div class="col-lg-6 col-md-6 col-xs-12">
-                    <h3 class="fw-bold py-3">Just say hi</h4>
+                    <h3 class="fw-bold py-3">Say hi</h4>
                         <p class="fs-3 py-4">I'm always open to discuss your project and talk about new things.</p>
                         <div class="row">
                             <div class="col">
@@ -266,7 +268,7 @@
                 </div>
             </div>
             <div class="row">
-                <p class="pt-4 pb-0"> Copyright 	&copy; 2022. All rights reserved</p>
+                <p class="pt-4 pb-0"> Copyright 	&copy; {{ Date('Y')  }}. All rights reserved</p>
             </div>
         </div>
     </main>

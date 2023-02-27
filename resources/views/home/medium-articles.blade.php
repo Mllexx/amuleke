@@ -1,7 +1,7 @@
 <ul class="row">
     @if ( isset($publications) && (!is_null($publications)) && (is_object($publications)) )
          @foreach ( $publications as $post_id => $post)
-         <li class="col-3">
+         <li class="col-3 col-sm-6 col-xs-12 col-lg-3">
             <div class="image">
                 <a href="https://medium.com/@amuleke/{{ $post->uniqueSlug }}"  target = "_blank">
                     <!--<img src="https://miro.medium.com/fit/c/300/180/{{ $post->virtuals->previewImage->imageId }}">-->

@@ -5,14 +5,14 @@ body{
 body > * {
     font-family: 'rubik', sans-serif;
     font-weight: 100;
-}  
+}
 a{
     text-decoration: none !important;
     color: black !important;
-} 
+}
 a:hover{
     text-decoration: underline;;
-} 
+}
 .nav-link{
     color: black;
     display: inline-block;
@@ -29,7 +29,7 @@ a:hover{
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: 
+    background-color:
     #818080;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
@@ -127,3 +127,6 @@ main{
     }
 }
 
+#writtings.content-segment li{
+    list-style: none !important;
+}
