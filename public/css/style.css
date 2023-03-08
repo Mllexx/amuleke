@@ -125,6 +125,12 @@ main{
     #social-icon-links-box{
         display: none !important;
     }
+    #writtings ul{
+        padding-left: 0 !important;
+    }
+    .stack-icons.row > div{
+        width: auto !important;
+    }
 }
 
 #writtings.content-segment li{

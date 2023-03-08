@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A minimalist template for a personal site.">
-    <meta name="author" content="Andrew Muleke and Bootstrap contributors">
-    <title>Minimal Folio</title>
+    <meta name="description" content="Andrew Muleke - Systems Engineer, Software Developer">
+    <meta name="author" content="Andrew Muleke<mulekea3@gmail.com>">
+    <title>Andrew Muleke</title>
 
     <link rel="canonical" href="https://amuleke.co.ke">
 
@@ -137,15 +137,13 @@
                     <i class="fa fa-2xl fa-laptop-code"></i>
                     <h4 class="segment-title py-2">Software Development</h4>
                     <p class="segment-details">
-                        I design and build backend web solutions to solve different problems based on my client's needs.
-                        I enjoy solving problems and I have built a mix of solutions for businesses including web-based systems, APIs, scripting solutions.
-                        My experience in building backend solutions has been primarily in the PHP ecosystem however I  am also working on expanding my stack into Python.
+                        With a solid background in designing and building web-based solutions and scripting, I am passionate about solving problems and creating innovative solutions. Throughout my career, I have developed an array of solutions for businesses, including web applications, APIs, scripts, ETL pipelines, and reporting dashboards. My approach to problem-solving is technology-driven, and I thrive on tackling complex challenges.
                         <br>
                         Lets talk so you can learn more on how I can help you build the solution you need.
                     </p>
                     <!-- Stack -->
                     <h6>Stack:</h6>
-                    <div class="section-content row align-items-center text-start py-4">
+                    <div class="section-content stack-icons row align-items-center text-start py-4">
                         <div class="col-lg-2 col-md-2 col-sm-6">
                             <i class="fa-brands fa-2xl fa-docker"></i>
                         </div>
@@ -168,14 +166,12 @@
                     <i class="fa fa-2xl fa-server"></i>
                     <h4 class="segment-title py-2">Systems Engineering</h4>
                     <p class="segment-details">
-                        I am well experienced in system administration and engineering.
-                        I am able to develop system architectures for different scenarios, manage the day to day administration of systems including monitoring and observebility, backups, scripting  and performance optimization.
-                        I have a good understanding of both Linux and Windows environments and I can configure and deploy systems on both.<br>
-                        I also deploy and manage systems on cloud, especially; Azure, Digital Ocean and AWS.
+                        I have more than 5 years of collective experience in system administration and engineering, with expertise in developing system architectures for various scenarios and managing the day-to-day administration of systems.
+                        My skill set includes BCP, disaster recovery, monitoring and observability, scripting, and performance optimization. I am proficient in both Linux and Windows environments and can configure and deploy systems on both platforms. Additionally, I am experienced in deploying and managing cloud-based systems.
                     </p>
                     <!-- Stack -->
                     <h6>Stack:</h6>
-                    <div class="section-content row align-items-center text-start py-4">
+                    <div class="section-content stack-icons row align-items-center text-start py-4">
                         <div class="col-lg-2 col-md-2 col-sm-6">
                             <i class="fa-brands fa-2xl fa-linux"></i>
                         </div>
@@ -197,25 +193,25 @@
                     <i class="fa fa-2xl fa-users"></i>
                     <h4 class="segment-title py-2">DevOps/SRE</h4>
                     <p class="segment-details">
-                        Having started my career in technical support, I've found myself providing different levels of support throughout most of the roles I've had.
-                        I have used and deployed ticketing systems and CRMs. <br>
-                        I have experience in providing email and phone support and I am well versed in support communication ettiquete and troubleshooting.<br>
-                        I can provide level 2 and level 3 technical support especially in contexts relating to software products and/or SaaS platforms.
+                        My experience in software development and systems engineering has enabled me to understand and appreciate the value of integrated processes with regard to how system management tenets of an organization can work with the software development teams to optimize the process of delivering value to businesses. I have and continue to utilize CI/CD and Agile concepts in my software development projects. I have a good understanding of Git, Docker, Azure DevOps and IaC among other key concepts of DevOps.
                     </p>
                     <!-- Stack -->
                     <h6>Stack:</h6>
-                    <div class="section-content row align-items-center text-start py-4">
-                        <div class="col-lg-2 col-md-2 col-sm-6">
-                            <i class="fa-solid fa-2xl fa-square-phone"></i>
+                    <div class="section-content stack-icons row align-items-center text-start py-4">
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-2">
+                            <i class="fa-brands fa-2xl fa-docker"></i>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-2">
+                            <i class="fa-brands fa-2xl fa-atlassian col-xs-2"></i>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-2">
+                            <i class="fa-brands fa-2xl fa-gitlab"></i>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-6 col-xs-2">
+                            <i class="fa-brands fa-2xl fa-hubspot"></i>
                         </div>
                         <div class="col-lg-2 col-md-2 col-sm-6">
-                            <i class="fa-solid fa-2xl fa-envelopes-bulk"></i>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6">
-                            <i class="fa-solid fa-2xl fa-comments"></i>
-                        </div>
-                        <div class="col-lg-2 col-md-2 col-sm-6">
-                            <i class="fa-brands fa-2xl fa-microsoft"></i>
+                            <i class="fa-brands fa-2xl fa-git-alt"></i>
                         </div>
                     </div>
                 </div>
