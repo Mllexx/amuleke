@@ -136,3 +136,7 @@ main{
 #writtings.content-segment li{
     list-style: none !important;
 }
+
+.medium-article-image{
+    min-height: 110px !important;
+}

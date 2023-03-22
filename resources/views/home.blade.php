@@ -219,14 +219,15 @@
         </div>
 
         <div id="writtings" class="px-0 py-5 content-segment">
+            <h3 class="section-title text-start py-5" style="font-weight:bold;">Sometimes I Write:</h3>
             @include('home.medium-articles')
         </div>
         <!-- CONTACT FORM & CALL TO ACTION -->
         <div id="footer" class="px-0 pt-5 pb-0 content-segment">
             <div class="row text-start px-0">
                 <div class="col-lg-6 col-md-6 col-xs-12">
-                    <h3 class="fw-bold py-3">Say hi</h4>
-                        <p class="fs-3 py-4">I'm always open to discuss your project and talk about new things.</p>
+                    <h4 class="fw-bold py-3">Say hi</h4>
+                        <p class="fs-3 py-4">I'm always open to discuss your project and talk about how I can help build solutions that deliver value.</p>
                         <div class="row">
                             <div class="col">
                                 <span class="">Mail me at:</span>
