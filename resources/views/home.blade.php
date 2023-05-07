@@ -75,7 +75,7 @@
             <ul id="myLinks" class="nav justify-content-end">
                 <li><a class="nav-link pr-0" aria-current="page" href="#">Home</a></li>
                 <li><a class="nav-link pr-0" href="#what-i-do">What I Do</a></li>
-                <!--<li><a class="nav-link" href="#experience">Experience</a></li>-->
+                <!----><li><a class="nav-link" href="#experience">What I've Built</a></li><!---->
                 <!--<li><a class="nav-link" href="projects">Projects</a></li>-->
             </ul>
         </nav>
@@ -114,11 +114,6 @@
                         <li class="px-2 py-3">
                             <a href="https://github.com/Mllexx"><i class="fa-brands fa-github"></i></a>
                         </li>
-                        <!--
-                        <li class="px-2 py-3">
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        </li>
-                        -->
                         <li class="px-2 py-3">
                             <a href="https://amuleke.medium.com/"><i class="fa-brands fa-medium"></i></a>
                         </li>
@@ -217,10 +212,12 @@
                 </div>
             </div>
         </div>
-
+        <!-- WRITTINGS SECTION -->
         <div id="writtings" class="px-0 py-5 content-segment">
             <h3 class="section-title text-start py-5" style="font-weight:bold;">Sometimes I Write:</h3>
-            @include('home.medium-articles')
+            <div class="section-content row align-items-center text-start">
+                @include('home.medium-articles')
+            </div>
         </div>
         <!-- CONTACT FORM & CALL TO ACTION -->
         <div id="footer" class="px-0 pt-5 pb-0 content-segment">
