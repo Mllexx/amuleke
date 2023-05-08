@@ -60,7 +60,7 @@
             <ul class="nav">
                 <li><a class="nav-link active" aria-current="page" href="#">Home</a></li>
                 <li><a class="nav-link" href="#what-i-do">What I Do</a></li>
-                <!--<li><a class="nav-link" href="#experience">Experience</a></li>-->
+                <li><a class="nav-link" href="#experience">What I've Built</a></li><!---->
                 <!--<li><a class="nav-link" href="projects">Projects</a></li>-->
             </ul>
         </nav>
@@ -252,11 +252,12 @@
                         </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-xs-12 text-bg-dark">
-                    <form class="form">
-                        <input class="" type="text" placeholder="Your name:"/>
-                        <input class="" type="text" placeholder="Your email address:"/>
-                        <input class="" type="text" placeholder="Your budget:"/>
-                        <textarea class="" rows="3" placeholder="Your project's description:"></textarea>
+                    <form name="website-contact-frm" id="website-contact-frm" method="post" class="form" action="{{ url('mailform') }}">
+                        {{ csrf_field() }}
+                        <input class="" type="text" id="name" required name="name" placeholder="Your name:"/>
+                        <input class="" type="text" id="email_address" required name="email_address" placeholder="Your email address:"/>
+                        <input class="" type="text" id="budget" name="budget" placeholder="Your budget:"/>
+                        <textarea class="" rows="3" id="description" required name="description" placeholder="Your project's description:"></textarea>
                         <button class="btn btn-light">Submit</button>
                     </form>
                 </div>

@@ -4,6 +4,7 @@ use App\Http\Controllers\DynamicToken;
 use Illuminate\Support\Facades\Route;
 use Statamic\Facades\Site;
 use App\Http\Controllers\FrontendController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,7 +25,11 @@ Route::get('/', function () {
 Route::controller(FrontendController::class)->group(function () {
     Route::get('/', 'index');
 });
-
+Route::controller(ContactController::class)->group(function () {
+    Route::post('/mailform', 'postContact');
+});
+/*
 Route::controller(UsersController::class)->group(function(){
     Route::get('users/','show');
 });
+*/
