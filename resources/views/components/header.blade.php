@@ -1,14 +1,14 @@
 <header class="d-flex mb-auto">
     <div id="logo" class="float-md-start mb-0">
-        <a href="#">
+        <a href="{{ url('/') }}">
             <img alt="logo" class="img-fluid" src="{{ asset("img/am-transparent-black-logo.svg") }}"  />
         </a>
     </div>
     <nav id="widescreen-nav" class="navbar-collapse nav nav-masthead justify-content-end float-md-end">
         <ul class="nav">
-            <li><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li><a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a></li>
             <li><a class="nav-link" href="#what-i-do">What I Do</a></li>
-            <li><a class="nav-link" href="#experience">What I've Built</a></li><!---->
+            <li><a class="nav-link" href="{{ url('projects') }}">What I've Built</a></li><!---->
             <!--<li><a class="nav-link" href="projects">Projects</a></li>-->
         </ul>
     </nav>
@@ -21,9 +21,9 @@
             </a>
         </div>
         <ul id="myLinks" class="nav justify-content-end">
-            <li><a class="nav-link pr-0" aria-current="page" href="#">Home</a></li>
+            <li><a class="nav-link pr-0" aria-current="page" href="{{ url('/') }}">Home</a></li>
             <li><a class="nav-link pr-0" href="#what-i-do">What I Do</a></li>
-            <!----><li><a class="nav-link" href="#experience">What I've Built</a></li><!---->
+            <!----><li><a class="nav-link" href="{{ url('projects') }}">What I've Built</a></li><!---->
             <!--<li><a class="nav-link" href="projects">Projects</a></li>-->
         </ul>
     </nav>

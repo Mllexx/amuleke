@@ -27,9 +27,8 @@ class Kernel extends ConsoleKernel
         // $schedule->command('cache:clear')->daily();
         // $schedule->command('config:cache')->daily();
         // $schedule->command('route:cache')->daily();
-        // $schedule->command('statamic:stache:warm')->daily();
-        // $schedule->command('statamic:static:clear')->daily();
-        // $schedule->command('statamic:static:warm')->daily();
+        $schedule->command('backup:clean')->daily()->at('07:00');
+        $schedule->command('backup:run')->daily()->at('21:30');
     }
 
     /**
