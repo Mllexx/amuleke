@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
+use App\Models\Projects;
 
 class FrontendController extends Controller
 {
@@ -41,5 +41,18 @@ class FrontendController extends Controller
         $posts = $body->payload->references->Post;
         return $posts;
     }
+
+    public function projects(){
+        return view('projects');
+    }
+
+    public function WPView(){
+        $projects = Projects::published()->get();
+        ##dd($posts);
+        foreach ($projects as $p){
+            dd($p->description);
+        }
+    }
+
 
 }

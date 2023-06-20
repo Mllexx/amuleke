@@ -24,6 +24,8 @@ Route::get('/', function () {
 */
 Route::controller(FrontendController::class)->group(function () {
     Route::get('/', 'index');
+    Route::get('/projects','projects');
+    Route::get('/wp-test','WPView');
 });
 Route::controller(ContactController::class)->group(function () {
     Route::post('/mailform', 'postContact');
