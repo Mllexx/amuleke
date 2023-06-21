@@ -8,7 +8,7 @@
         <ul class="nav">
             <li><a class="nav-link active" aria-current="page" href="{{ url('/') }}">Home</a></li>
             <li><a class="nav-link" href="#what-i-do">What I Do</a></li>
-            <li><a class="nav-link" href="{{ url('projects') }}">What I've Built</a></li><!---->
+            <!--<li><a class="nav-link" href="{{ url('projects') }}">What I've Built</a></li>-->
             <!--<li><a class="nav-link" href="projects">Projects</a></li>-->
         </ul>
     </nav>
@@ -23,7 +23,7 @@
         <ul id="myLinks" class="nav justify-content-end">
             <li><a class="nav-link pr-0" aria-current="page" href="{{ url('/') }}">Home</a></li>
             <li><a class="nav-link pr-0" href="#what-i-do">What I Do</a></li>
-            <!----><li><a class="nav-link" href="{{ url('projects') }}">What I've Built</a></li><!---->
+            <!--<li><a class="nav-link" href="{{ url('projects') }}">What I've Built</a></li>-->
             <!--<li><a class="nav-link" href="projects">Projects</a></li>-->
         </ul>
     </nav>
