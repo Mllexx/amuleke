@@ -61,7 +61,7 @@
                         <span class="fw-light">I'm</span>
                         <span class="fw-bold"> Andrew Muleke</span>
                     </h1>
-                    <h3 id="byline" class="fw-light">Entreprenuer, Software Engineer with Systems Engineering experience and sometimes I write 🙂🤓</h3>
+                    <h3 id="byline" class="fw-light">Innovator, Software Engineer with Systems Engineering experience, and sometimes I write 🙂🤓</h3>
                     <a class="btn btn-outline-secondary" href="#what-id-do">Find Out More
                         <i class="fa fa-arrow-down"></i>
                     </a>
